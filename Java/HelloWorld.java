@@ -15,9 +15,9 @@ public class HelloWorld {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        //System.out.println("text"/ variabel);
+        //menampilkan output
         System.out.println("Hello World in Java :)");
-        //latihan print
     }
     
 }
