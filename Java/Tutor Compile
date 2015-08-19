@@ -1,0 +1,4 @@
+Compile file java nya pakai cmd (Command Prompt) :
+- cari direktori file java nya (tempat nyimpen data javanya)
+- javac [namafile].java
+- jika tidak muncul error -> java [namafile]
