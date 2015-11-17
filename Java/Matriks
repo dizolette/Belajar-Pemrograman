@@ -1,0 +1,91 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package latihan;
+
+/**
+ *
+ * @author dwi
+ */
+import java.util.Scanner;
+public class PenjumlahanArray {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner input = new Scanner(System.in);
+        
+        System.out.print("masukan banyak baris dan kolom matriks : ");
+        int bk = input.nextInt();
+        
+        //deklarasi array
+        int arrA [][] = new int[bk][bk];
+        int arrB [][] = new int[bk][bk];
+        int arrHasil [][] = new int [bk][bk];
+        
+        //input data matriks A
+        System.out.println("");
+        for(int i = 0; i < bk; i++){
+            for(int j = 0; j < bk; j++){
+                System.out.print("masukan data matriks A ["+ i + "]" + "[" + j + "]" + " : ");
+                arrA [i][j] = input.nextInt();
+            }
+        }
+        
+        //input data matriks B
+        System.out.println("");
+        for(int m = 0; m < bk; m++){
+            for(int n = 0; n < bk; n++){
+                System.out.print("masukan data matriks B ["+ m + "]" + "[" + n + "]" + " : ");
+                arrB [m][n] = input.nextInt();
+            }
+        }
+        
+        System.out.println();
+        
+        //print matriks A
+        System.out.println("Matriks A:");
+        for(int i = 0; i < bk; i++){
+            for(int j = 0; j < bk; j++){
+                System.out.print(arrA [i][j] + " ");
+            }
+            System.out.println();
+        }
+        
+        
+        //print matriks B
+        System.out.println("Matriks B:");
+        for(int m = 0; m < bk; m++){
+            for(int n = 0; n < bk; n++){
+                System.out.print(arrB [m][n] + " ");
+            }
+            System.out.println();
+        }
+        
+        //penjumlahan array
+        System.out.println();
+        System.out.println("proses penjumlahan Matriks A dan B :");
+        for(int a = 0; a < bk; a++){
+            for(int b = 0; b < bk; b++){
+                arrHasil[a][b] = arrA[a][b] + arrB[a][b];
+                System.out.print(arrA[a][b] + " + " + arrB[a][b] + " = " + arrHasil[a][b] + "  ");
+            }
+            System.out.println();
+        }
+        
+        //print matriks hasil
+        System.out.println();
+        System.out.println("Hasil penjumlahan Matriks A dan B :");
+        for(int a = 0; a < bk; a++){
+            for(int b = 0; b < bk; b++){
+                System.out.print(arrHasil[a][b] + "  ");
+            }
+            System.out.println();
+        }
+    }
+    
+}
