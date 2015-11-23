@@ -1,0 +1,195 @@
+
+package latihan;
+
+
+import java.util.Scanner; //import library Scanner untuk membaca input user
+public class Rangkuman {
+    
+    public static void main(String[]args){
+        //pembuatan objek dari kelas Scanner
+        //namaKelas/library namaObjek = new Konstruktor(parameter);
+        Scanner input = new Scanner(System.in);
+        
+        //deklarasi variabel
+        //tipeData namaVariabel;
+        int umur;
+        
+        //memunculkan text, tidak pindah baris
+        System.out.print("Masukan nama anda: ");
+        
+        //memanggil metode dari kelas/library melalui objek yang dibuat di kelas/library tersebut
+        //(jika variabel belum di deklarasikan diatas)
+        //tipeData namaVariabel = namaObjek.namaMetode(parameter);
+        String nama = input.nextLine(); //nextInt() berguna untuk membaca input berupa String
+        
+        //memunculkan text, pindah baris
+        System.out.println("masukan umur anda: ");
+        
+        //memanggil metode dari kelas/library melalui objek
+        //(jika variabel sudah di deklarasi diatas)
+        //namaVariabel = namaObjek.namaMetode(parameter);
+        umur = input.nextInt(); //nextInt() berguna untuk membaca input berupa integer
+        System.out.println(); //enter
+        
+        //mencetak hasil inputan user dengan memanggil variabelnya (nama & umur)
+        System.out.println("nama saya: " + nama);
+        System.out.println("umur saya: " + umur);
+        System.out.println();//enter
+        
+        //PERCABANGAN: 1. if , 2. switch
+        /*percabangan if, mempunyai sintaks umum : 
+        if(kondisi1 bernilai boolean){
+            statement ketika kondisi pertama terpenuhi;
+        }
+        
+        else if(kondisi2 bernilai boolean) {
+            statement ketika kondisi kedua terpenuhi;
+        }
+        
+        else {
+            statement ketika kondisi pertama dan kedua tidak terpenuhi;
+        }
+        
+        note: else if bersifat opsional, digunakan ketika terdapat 2 kondisi atau lebih
+        */
+        
+        if (umur > 17){
+            System.out.println("umur anda diatas 17");
+        }
+        else if(umur < 10) {
+            System.out.println("umur anda dibawah 10");
+        }
+        else {
+            System.out.println("umur anda diantara 10 - 17 tahun");
+        }
+        
+        System.out.println();//enter
+        
+        /* percabangan switch
+        sintaks umum switch :
+        switch (variabel) {
+            case 1:
+                statement ketika variabel bernilai 1;
+            break;
+        
+            case 2:
+                statement ketika variabel bernilai 2;
+            break;
+        
+            case n:
+                statement ketika variabel bernilai n;
+            break;
+        
+            default:
+                statement ketika nilai variabel tidak ada yang sesuai dengan case;
+            break;
+        }
+        
+        */
+        int x;
+        System.out.print("masukan nilai x: ");
+        x = input.nextInt(); //baca input, simpan di variabel x
+        
+        switch (x){ //untuk switch,nilai variabel akan deksekusi jika sesuai dengan case.
+            case 5:
+                System.out.println("ini case 5");
+                break; //break untuk memberhentikan suatu proses dan keluar dari proses tersebut
+            
+            case 10:
+                System.out.println("ini case 10");
+                break;
+            
+            default: //jika nilai x tidak sesuai dengan case
+                System.out.println("input tidak sesuai");
+                break;
+        }
+        System.out.println();//enter
+                
+        /* PERULANGAN : 1. For, 2. while, 3. do-while
+        1. Struktur for :
+                for(inisialisasi, kondisi loop, increment(var++)/decrement(var--) ) {
+                    Statement yang di looping;
+                }
+        */
+        
+        for (int i = 0; i < 3; i++){
+            System.out.println("looping for saat nilai i : " + i); 
+        }
+        
+        System.out.println();//enter
+        
+        /* 2. while
+        Struktur dasar while :
+        while(kondisi){
+            Statement yang di looping;
+            increment/decrement , untuk menambah nilai variabel agar tidak unlimited loop
+        }
+        */
+        
+        int a = 0; //inisialisasi nilai awal variabel
+        while(a < 3){
+            System.out.println("looping while saat nilai a :" + a);
+            a++; //nilai a ditambah 1 tiap looping agar mencapai batas looping
+        }
+        
+        System.out.println();//enter
+        
+        /* 3. do-while
+        Struktur dasar do-while :
+        do(
+            statement yang di looping;
+            increment/decrement variabel;
+        } while (kondisi looping ketika benar akan mengulang loop);
+        */
+        int b = 3;
+        do{
+            System.out.println("looping do-while saat nilai b: " + b);
+            b--; //decrement variabel b agar dapat mencapai batas kondisi looping
+        } while (b > 0);
+        
+        System.out.println();//enter
+        
+        //ARRAY : 1. 1 dimensi, 2 dimensi atau lebih
+        //penulisan array : 1. int[]arr atau int arr[]
+        
+        //deklarasi array cara 1
+        //jika 1 dimensi:
+        // tipeData [] namaArray = new tipeData[banyakDataArray/indeks];
+        
+        //jika 2 dimensi:
+        // tipeData [][] namaArray = new tipeData[banyakDataArray/indeks][banyakDataArray/indeks];
+        
+        //indeks selalu dimulai dari 0
+        int [] dimensiSatu = new int[3];
+        dimensiSatu[0] = 1; //pengisian nilai untuk tiap indeks array
+        dimensiSatu[1] = 2;
+        dimensiSatu[2] = 3;
+        
+        System.out.println("hasil dari dimensiSatu[2]= " + dimensiSatu[2]); //print array indeks 3
+       
+        System.out.println();//enter
+        
+        //deklarasi array cara 2
+        //jika 1 dimensi :
+        // int [] arr = {dataArray1,dataArray2,dataArray3,dataArray4,dataArray5};
+        int [] arr = {1,2,3,4,5};
+        System.out.println("hasil dari arr[0]= " + arr[0]); //print array indeks 0
+        
+        System.out.println();//enter
+        
+        //jika 2 dimensi :
+        //int [baris][kolom] arr2D = {{1,2},{3,4}};
+        //jika dalam bentuk matriks menjadi seperti ini :
+        // 1    2
+        // 3    4
+        int [][] arr2D = {{1,2},{3,4},{5,6}};
+        //jika disusun dalam bentuk matriks :
+        //1 2       [0][0]  [0][1]
+        //3 4       [1][0]  [1][1]
+        //5 6       [2][0]  [2][1]
+        System.out.println("hasil dari arr2D[0][0]= " + arr2D[0][0]); //print array indeks baris 0, kolom 0
+        System.out.println("hasil dari arr2D[0][1]= " + arr2D[0][1]); //print array indeks baris 0, kolom 1
+        System.out.println("hasil dari arr2D[1][0]= " + arr2D[1][0]); //print array indeks baris 1, kolom 0
+        System.out.println("hasil dari arr2D[1][1]= " + arr2D[1][1]); //print array indeks baris 1, kolom 1
+    }
+}
