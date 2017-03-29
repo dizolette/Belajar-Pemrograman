@@ -1,0 +1,71 @@
+
+// <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+// #[regen=yes,id=DCE.634B1966-A408-6573-4740-F0A4003D84E6]
+// </editor-fold> 
+public class pegawai {
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.AC14A38C-F089-4F08-CC38-53E19069B4EC]
+    // </editor-fold> 
+    private String nama;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.BA721BDA-6E80-274E-DD10-962E9C0E6803]
+    // </editor-fold> 
+    private String jabatan;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.023B1A9A-70A3-A6F4-A796-8D721FCE0504]
+    // </editor-fold> 
+    private int baseGaji;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.72F84B05-255E-A7D0-442E-2DBE42CB2CEF]
+    // </editor-fold> 
+    public pegawai () {
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.4E013A1E-6CF9-79A1-7FC2-CF8D6312E924]
+    // </editor-fold> 
+    public int getBaseGaji () {
+        return baseGaji;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.BAB0F719-B39F-B281-8665-640CA5F19940]
+    // </editor-fold> 
+    public void setBaseGaji (int val) {
+        this.baseGaji = val;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.0C8CABA0-67FD-6B29-9695-2A1C77D1A286]
+    // </editor-fold> 
+    public String getJabatan () {
+        return jabatan;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.579522F2-CA36-6528-1660-393FAD8D3C14]
+    // </editor-fold> 
+    public void setJabatan (String val) {
+        this.jabatan = val;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.0FFC3716-F973-1766-216C-E11C3B2DDBEB]
+    // </editor-fold> 
+    public String getNama () {
+        return nama;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.DFF454B7-12B4-A3E9-967D-EC0E0EDAE459]
+    // </editor-fold> 
+    public void setNama (String val) {
+        this.nama = val;
+    }
+
+}
+
